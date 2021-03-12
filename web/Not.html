@@ -1,0 +1,16 @@
+﻿
+<h3> {{$root.secilendersadi}} isimli dersteki, {{$root.secilenogrenciadi}} isimli öğrencinin notları aşağıdadır.</h3>
+<table class="table table-stripped">
+    <tr>
+        <th>Vize</th>
+        <th>Final</th>
+        <th>Ödev</th>
+        <th>Harf Notu</th>
+    </tr>
+    <tr ng-repeat="x in notlar">
+        <td>{{x.Vize}}</td>
+        <td>{{x.Final}}</td>
+        <td>{{x.Odev}}</td>
+        <td>{{x.HarfNotu}}</td>
+    </tr>
+</table>

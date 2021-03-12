@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="ng.js"></script>
+</head>
+<body ng-app="modul">
+    <div class="col-md-3">
+        <h1>MENÜ</h1>
+        <br />
+        <a href="#!derslerinlistesi">Derslerin Listesi</a><br />
+        <a href="#!dersialanogrenciler">Dersi Alan Öğrenciler</a><br />
+        <a href="#!not">Notlar</a>
+    </div>
+    <div class="col-md-9">
+        <div ng-view></div>
+    </div>
+
+
+
+
+</body>
+</html>

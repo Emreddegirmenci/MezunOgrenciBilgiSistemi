@@ -1,0 +1,20 @@
+﻿<table class="table table-stripped">
+    <tr>
+        <th>Ad-Soyad</th>
+        <th>Numara</th>
+        <th>Mail</th>
+        <th>Mezuniyet Tarihi</th>
+        <th>İşlemler</th>
+    </tr>
+    <tr ng-repeat="x in ogrenciler">
+        <td>{{x.AdSoyad}}</td>
+        <td>{{x.No}}</td>
+        <td>{{x.Mail}}</td>
+        <td>{{x.MezuniyetTarihi}}</td>
+        <td>
+            <button class="btn btn-success" ng-click="ogrencininderstenaldiginotlarigor(x.OgrenciDersID, x.AdSoyad)">Notları Gör</button>
+
+        </td>
+
+    </tr>
+</table>

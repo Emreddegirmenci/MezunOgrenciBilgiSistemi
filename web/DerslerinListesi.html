@@ -1,0 +1,19 @@
+﻿<table class="table table-stripped">
+    <tr>
+        <th>Dersin Adı </th>
+        <th>Kredisi </th>
+        <th>Akts</th>
+        <th>İşlemler</th>
+    </tr>
+    <tr ng-repeat="x in dersler">
+        <td>{{x.DersAdi}}</td>
+        <td>{{x.DersKredi}}</td>
+        <td>{{x.DersAkts}}</td>
+        <td>
+            <button class="btn btn-danger" ng-click="derssil(x.DersID)">SİL</button>
+            <button class="btn btn-success" ng-click="dersialanogrencilerigetir(x.DersID, x.DersAdi)">Dersi Alan Öğrenciler</button>
+
+        </td>
+
+    </tr>
+</table>
